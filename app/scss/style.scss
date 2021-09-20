@@ -44,6 +44,7 @@ body{
         position: absolute;
         right: -70px;
         top: 50%;
+        transform: translateY(-55%);
     }
 }
 .subtitle{
@@ -714,6 +715,7 @@ input.appointment__input{
         background-image: url("../images/popular/banner.jpg");
         &__inner{
             padding: 85px 200px;
+            justify-content: space-between;
             display: flex;
         }
     }
@@ -918,5 +920,173 @@ input.appointment__input{
         height: 60px;
         border-radius: 50%;
         background-color: #ffce1c;
+    }
+}
+.blog{
+    padding: 110px 0;
+    &__text-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 70px;
+    }
+    &__subtitle{
+        padding-top: 35px;
+    }
+    &__top-link{
+        font-size: 14px;
+        font-family: "Archivo";
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 16px;
+        text-align: center;
+        padding: 20px 45px;
+        border: 2px solid rgba(195, 195, 195, 0.2);
+        border-radius: 35px;
+        flex: none;
+        background-color: transparent;
+        transition: all .666s;
+        &:hover{
+            background-color: #fff;
+            color: #000;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        &__item{
+            max-width: 300px;
+            width: 100%;
+        }
+        &__image{
+            &-box{
+                position: relative;
+                margin-bottom: 25px;
+                &__text{
+                    position: absolute;
+                    right: 20px;
+                    bottom: 0;
+                    transform: translateY(50%);
+                    font-size: 14px;
+                    font-family: "Archivo";
+                    color: #111;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    line-height: 16px;
+                    text-align: center;
+                    padding: 7px 15px;
+                    border-radius: 35px;
+                    background-color: #ffce1c;
+                }
+            }
+        }
+        &__link{
+            padding: 0 15px 0 25px;
+            position: relative;
+            font-size: 14px;
+            font-family: "Archivo";
+            font-weight: 400;
+            color: #cacaca;
+            line-height: 16px;
+        }
+        &__date-link{
+            &::before{
+                content: "";
+                position: absolute;
+                width: 17px;
+                height: 19px;
+                background-image: url("../images/blog/calendar.svg");
+                left: -1px;
+                top: -2px;
+            }
+        }
+        &__author-link{
+            &::before{
+                content: "";
+                position: absolute;
+                width: 17px;
+                height: 19px;
+                background-image: url("../images/blog/user.svg");
+                left: 1px;
+                top: -2px;
+            }
+        }
+        &__discr{
+            &-text{
+                font-size: 24px;
+                font-family: "Oswald";
+                color: #fff;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 25px;
+                padding-top: 25px;
+            }
+        }
+        &__form{
+            max-width: 470px;
+            width: 100%;
+            background-color: #282828;
+            padding: 55px;
+            padding-bottom:75px;
+            &__text{
+                font-size: 40px;
+                font-family: "Oswald";
+                color: #fff;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 46px;
+                &-box{
+                    padding-bottom: 45px;
+                }
+                &-heading{
+                    font-size: 14px;
+                    font-family: "Archivo";
+                    color: #ffce1c;
+                    font-weight:700;
+                    text-transform: uppercase;
+                    line-height: 16px;
+                    letter-spacing: 4px;
+                    padding-bottom: 15px;
+                }
+            }
+            &__label{
+                position: relative;
+            }
+            &__input{
+                background-color: transparent;
+                padding: 25px 35px;
+                max-width: 350px;
+                width: 100%;
+                border: 2px solid rgba(195, 195, 195, 0.2);
+                border-radius: 35px;
+                font-size: 14px;
+                font-family: "Archivo";
+                color: #cacaca;
+                line-height: 16px;
+                outline: none;
+                &::placeholder{
+                    font-size: 14px;
+                    font-family: "Archivo";
+                    color: #cacaca;
+                    line-height: 16px;
+                }
+            }
+            &__btn{
+                width: 55px;
+                height: 55px;
+                border: none;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 7px;
+                border-radius: 50%;
+                background-color: #ffce1c;
+                background-image: url("../images/blog/envelope.svg");
+                background-repeat: no-repeat;
+                background-position: center center;
+                cursor: pointer;
+            }
+        }
     }
 }
