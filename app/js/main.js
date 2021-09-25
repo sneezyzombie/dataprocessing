@@ -18,4 +18,8 @@ $(function () {
         slidesToShow: 3,
         infinite:false
     })
+    $('.header__btn').on('click', function () {
+        $('.header__menu-list').toggleClass('header__menu-list--active'),
+            $('.header__btn').toggleClass('header__btn--active')
+    })
 });

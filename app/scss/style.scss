@@ -77,6 +77,9 @@ body{
     text-align: center;
 }
 .header{
+    &__btn{
+        display: none;
+    }
     &__inner{
         min-height: 100vh;
         background-image: url("../images/header/bg.jpg");
@@ -622,7 +625,7 @@ input.appointment__input{
 }
 .popular{
     background-image: url("../images/popular/bg.jpg");
-    padding: 120px 0;
+    padding: 110px 0;
     &__heading{
         color: #999;
         font-weight: 700;
